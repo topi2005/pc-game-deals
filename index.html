@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PC Game Deals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>PC Game Deals</h1>
+    <p class="intro">Prices in Rand.</p>
+
+    <div class="controls">
+      <label for="search" class="visually-hidden">Search by title</label>
+      <input id="search" type="search" placeholder="Search by title">
+      <label class="checkbox">
+        <input id="sale-only" type="checkbox">
+        On sale only
+      </label>
+    </div>
+
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <ul id="deal-list" class="deal-list"></ul>
+  </main>
+
+  <!-- Order matters: data and functions first, then the page code. -->
+  <script src="data.js"></script>
+  <script src="functions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
